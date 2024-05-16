@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:200px;
+            width:200px;
+            border:1px solid black;
+            margin: 10px; /* do border ke bich space dene ke liye hum isk use karte hai. */
+            padding: 40px; /* to give space between border and space. */
+            box-sizing: border-box;/*If we don't want to change the size of border after using padding then we use box-sizing.*/
+        }
+        #org{
+            background-color: rgb(83, 64, 29);
+        }
+        #wht
+        {
+            background-color:#a03c3c;
+        }
+        #gre
+        {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="org">A</div>
+    <div class="box" id="wht">B</div>
+    <div class="box" id="gre">C</div>
+</body>
+</html>

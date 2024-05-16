@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;/*To change the main axis direction which is x-axis to y axis.*/
+    flex-wrap: wrap;/*To Intect(display squeze karne parwidth me farak na ho) the width we use this. */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: center;
+
+    /* gap: 10px;It is shorthend notation which we apply to give the gap betwwen the item. */
+
+    align-content: flex-start;
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+
+}
+.box
+{
+    border: 1px solid black;
+    background-color: aqua;
+    /* width: 200px; if we add extar line which exceeds the size then it trims that part which can be resolve by using flex grow */
+    /* flex-grow: 1;To increase the width available and the width are equal. */
+    flex-basis: 50%;/*To apply width to the item.in case of percent we have to add box-sizing*/
+}
+#box1{ 
+    order: 2;/*We are just changing the order or we can say that we are placing box1 to the end.*/
+}
+#box3{
+    order: 8;
+    /* flex-shrink: 2;To give shrinking speed or we can say to make responsive. */
+}
+#box2{
+    order: 6;/*to place box2 in the mid of box1 and box3 we have set the order b/w 1 and 3*/
+    /* align-self: flex-end; */
+}

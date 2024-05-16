@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    /* background-color: rgb(141, 141, 217); */
+}
+caption{
+    caption-side: bottom;
+}
+</style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: #4fc1e0;">
+            <col span="1" style="background-color: rgb(239, 195, 114);">
+            <col span="1">
+            <col span="1" style="background-color: rgb(25, 181, 88);">
+        </colgroup>
+        <caption> Routine </caption>
+        <thead>
+            <tr>
+                <th rowspan="3" >day</th>
+                <th colspan="4" >column</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th colspan="=2" rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00</td>
+                <td rowspan="2">5:00</td>
+                <td colspan="2">Introduction to xml</td>
+            </tr>
+            <tr>
+                <td>Validity:Dtd and Relax Ng</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00</td>
+                <td>11:00</td>
+                <td colspan="2" rowspan="2">xpath</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>2:00</td>
+            </tr>
+            <tr>
+                <td>2:00</td>
+                <td>5:00</td>
+                <td colspan="2" rowspan="1">XSL Transformation</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

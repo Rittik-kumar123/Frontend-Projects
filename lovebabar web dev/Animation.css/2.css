@@ -1,0 +1,23 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    border: 2px solid orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    /* transition: 1s; */
+    transition-property: all;
+    transition-delay: 1s;
+}
+.box:hover{
+    background-color: red;
+    border: 10px solid black;
+    transition: 2s;
+    
+}

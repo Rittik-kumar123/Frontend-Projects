@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Project</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/fav.ico" type="image/x-icon">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="unwrap.css ">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle-top circle"></div>
+        <div class="circle-bottom circle"></div>
+
+        <!-- card starts -->
+        <div class="card">
+
+            <img src="image/img.jpg" alt="User Image">
+            <div class="User-name">Rittik Kumar</div>
+            <h3 class="user-designation">College Student</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share my profile
+                </button>
+                <button id="follow-btn">Follow me</button>
+            </div>
+           
+        </div>
+         <!-- cards end -->
+    </div>
+    <!-- wrapper ends -->
+
+        <!-- Profile Model starts -->
+        <div class="modal" id="profile-modal">
+            <!-- modal header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Share my profile</h2>
+                <div>
+                    <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>    
+                </div>
+            </div>
+
+            <!-- modal body  -->
+            <div class="modal-body">
+                <h3>Share this Via</h3>
+
+                <div class="social-icons">
+
+                    <a href="https://www.facebook.com/profile.php?id=100022511284562" id="facebook-icon" class="icon" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" id="twitter-icon" class="icon" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" id="instagram-icon" class="icon" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com" id="whatsapp-icon" class="icon" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- profile-modal-ends -->
+
+
+        <!-- follow modal -->
+        <div class="modal" id="follow-modal">
+            <!-- modal header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Github profile</h2>
+                <div>
+                    <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+                </div>
+            </div>
+
+            <!-- modal body  -->
+            <div class="modal-body">
+
+                <h3>Check my repositeries</h3>
+
+                <div class="social-icons">
+                    <a href="https://web.whatsapp.com" id="github-icon" class="icon" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://github.com" id="follow-unfollow" target="_blank">
+                        Follow
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- follow modal ends -->
+
+        <!-- overlay -->
+        <div class="overlay" id="overlay"></div>
+    
+
+    <script src="unwrap.js"></script>
+</body>
+</html>

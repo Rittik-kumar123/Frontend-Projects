@@ -1,0 +1,22 @@
+h1{
+/*parameters are like : horizontal vertical blur color(shadow)*/
+    text-shadow: 3px 3px 3px red;
+/*Multiple shadow*/
+    text-shadow: 3px 3px 3px red,3px 3px 3px yellow;
+}
+.box
+{
+    border: 2px solid black;
+    max-height: 200px;
+    /* width: 200px; */
+    background-color: aqua;
+    /* By usin negative value we can change 
+    the side of effect but not in brul 
+    parameter.*/
+
+    box-shadow: 10px 10px 10px burlywood,-10px -10px 10px yellow;
+    
+    /*by using max height we make the height constant due to which case of overflow occur when ever we exceed tjhat height So to solve that problem we use overflow tag.*/
+
+    overflow: auto;
+}

@@ -1,0 +1,15 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translate
+{
+    transform: perspective(10px) translate3D(100px,200px,-10px);/*To use Z axis we need to on the perspective.*/
+}
+.scaled{
+    margin-left: 200px;
+    transform: perspective(350px) scaleZ(6) rotateX(45deg)rotateY(30deg);
+}

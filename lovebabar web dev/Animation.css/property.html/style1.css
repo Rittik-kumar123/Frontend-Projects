@@ -1,0 +1,58 @@
+.container{
+    width: 212px;
+    height: 212px;
+    background-color: yellow;
+    border: 2px solid red;
+    
+}
+.box{
+    height: 212px;
+    width: 212px;
+    border: 2px solid green;
+    background-color: aqua;
+
+    /*Animation*/
+    animation-name: rittik;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+
+@keyframes rittik {
+    0%{
+        width: 0%;
+        background-color: red;
+    }
+
+    25%{
+        width: 25%;
+        background-color: brown;
+    }
+
+    50%
+    {
+        width: 50%;
+        background-color: green;
+    }
+
+    from {
+        width: 75%;
+        background-color: black;
+    }
+    to{
+        width: 100%;
+        background-color: black;
+    }
+
+    
+}
+/* @keyframes rittik{ */
+    /* from{ */
+        /* width: 0%; */
+    /* } */
+    /* to { */
+        /* width: 100%; */
+    /* } */
+/* } */
